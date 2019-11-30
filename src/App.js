@@ -27,11 +27,9 @@ class App extends Component {
   }
 
   render() {
-    console.log(this.state.todos)
     return (
       <div className="App">
-        <h1>Hello World!</h1>
-        <Todos/>
+        <Todos todos={this.state.todos} />
       </div>
     );
   }
